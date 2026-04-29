@@ -108,3 +108,59 @@ Classes — three character classes (Knight / Wizard / Assassin) you swap betwee
 ### 🗂️ Project Zip
 [`BoneAndBlade.zip`](BoneAndBlade.zip) — contains `Assets/`, `Packages/`, `ProjectSettings/`
 
+# CacheCal
+
+A Unity math puzzle game where you reach a target number by computing intermediate results and storing them in a CPU-style cache.
+
+## 📦 Submission Package
+
+| Item | Path |
+|---|---|
+| Runtime mechanic scripts | [`/Runtime/Mechanic/CacheCal/Scripts`](/Runtime/Mechanic/CahceCal/Scripts) |
+| Script explainers | [`/Runtime/Mechanic/CacheCal/Script_Explainers`](/Runtime/Mechanic/CacheCal/Script_Explainers) |
+| Source project zip | [`/Sample/CacheCal/CacheCal_Project.zip`](/Sample/CacheCal/CacheCal_Project.zip) |
+| Video zip | [`/Sample/CacheCal/CacheCal_Videos.zip`](/Sample/CacheCal/CacheCal_Video.zip) |
+| Mechanics index | [`/MECHANICS_INDEX.md`](/MECHANICS_INDEX.md) |
+
+## 🎮 How to Play
+
+You have 4 number cards and a target. Pick 2 cards, choose an operator — the result goes into the **cache**. Cache values can be reused freely; original cards are consumed on use.
+
+**Operators:** `+` `−` `×` `÷` `%`
+- Subtraction: positive results only
+- Division: integer, exact only
+- Modulo: non-zero remainder only
+
+**Win:** Any cached value equals the target.  
+**Lose:** No path to the target remains.
+
+### Scoring (par = 2 moves)
+| Moves | Stars |
+|-------|-------|
+| 2 | ★★★ Perfect |
+| 3 | ★★ Good |
+| 4+ | ★ Try harder |
+
+Hit par and the next level starts with a larger cache (3 slots).
+
+## 🧩 Levels
+
+| # | Target | Cards | Difficulty |
+|---|--------|-------|------------|
+| 1 | 36 | 3, 6, 2, 5 | Easy |
+| 2 | 25 | 3, 4, 6, 7 | Medium |
+| 3 | 40 | 3, 5, 7, 4 | Medium |
+| 4 | 16 | 3, 4, 5, 7 | Hard |
+| 5 | 15 | 3, 9, 4, 7 | Hardest |
+
+No level has a direct one-step solution — the cache is always required.
+
+### 🗂️ Project Zip
+[`CacheCal.zip`](CacheCal.zip) — contains `Assets/`, `Packages/`, `ProjectSettings/`
+
+### 🔗 Itch.io Link
+[Play CacheCal](https://siri6.itch.io/cachecal?secret=bCthBKkY2Gu1e75KzxnmiGAUyY)
+
+### 🛠️ Tech Stack
+Unity 6 · URP 2D · C# · TextMeshPro · WebGL
+
